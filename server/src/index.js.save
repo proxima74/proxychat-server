@@ -1,0 +1,18 @@
+const express = require("express");
+const cors = require("cors");
+const http = require("http");
+const { Server } = require("socket.io");
+
+const app = express();
+const server = http.createServer(app);
+
+app.use(cors());
+app.use(express.json());     console.log("User disconnected:", socket.id);
+    });
+});
+
+const PORT = 3000;
+
+server.listen(PORT, "0.0.0.0", () => {
+    console.log(`ProxyChat server running on port ${PORT}`);
+});
